@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:id="@+id/layuot5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#24333b"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="30dp"
+        android:weightSum="6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="2.5"
+            android:background="#24333b">
+            <!--Track GAme-->
+            <LinearLayout
+                android:id="@+id/layout_trackgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/track_game" />
+
+                <TextView
+                    android:id="@+id/text_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="2dp"
+                    android:text="Track Game"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/bottom_text_size" />
+            </LinearLayout>
+            <!--New Plan-->
+            <LinearLayout
+                android:layout_toRightOf="@+id/layout_trackgame"
+                android:id="@+id/layout_newplan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_newplan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_plan" />
+
+                <TextView
+                    android:id="@+id/text_newplan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="2dp"
+                    android:text="New Plan"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/bottom_text_size" />
+            </LinearLayout>
+            <!--find game...-->
+            <LinearLayout
+                android:layout_toRightOf="@+id/layout_newplan"
+                android:id="@+id/layout_findgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_findgame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/find_game" />
+
+                <TextView
+                    android:id="@+id/text_findgame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginTop="2dp"
+                    android:text="Find Game"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/bottom_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layuot5"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/top_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/float_click"/>
+    </LinearLayout>
+
+</RelativeLayout>

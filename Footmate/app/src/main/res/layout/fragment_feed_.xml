@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.footmate.fragment.Feed_Fragment">
+    <TextView
+        android:id="@+id/text_internetconnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:text="@string/internetmessage"
+        android:visibility="gone"
+        android:background="@color/white"/>
+    
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"/>
+
+    <ListView
+        android:layout_below="@+id/test"
+        android:id="@+id/feed_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:id="@+id/searchforfutmatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="120dp"
+        android:layout_below="@+id/test">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/searchforfutmatetextcolor"
+            android:layout_marginBottom="35dp"
+            android:text="@string/addfriendtext"/>
+        <ImageView
+            android:id="@+id/searchforfutmates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/searchforfutmates"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_floataction"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/add_button_2"
+        app:elevation="5dp"
+        app:backgroundTint="@color/plus_color"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+</RelativeLayout>

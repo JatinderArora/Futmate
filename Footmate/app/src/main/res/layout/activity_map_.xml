@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/tool"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:tag="sticky"
+            android:orientation="horizontal">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/map_toolbar"/>
+            <!--new editing.......-->
+            <include
+                android:id="@+id/save_toolbar"
+                layout="@layout/save_tool"/>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool">
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--com.google.android.gms.maps.SupportMapFragment-->
+        <ImageView
+            android:id="@+id/main_marker"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/mark" />
+
+
+        <RelativeLayout
+            android:id="@+id/bottomtab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+            <LinearLayout
+                android:id="@+id/pickupaddress"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="60dp">
+                <TextView
+                    android:id="@+id/field_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_app_color"/>
+                <TextView
+                    android:id="@+id/addressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/dark_greay"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/pickupaddress"
+                android:background="@color/dark_app_color"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txt_AddField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding"
+                    android:text="ADD FIELD HERE?"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomtabedit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/field_name_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Field Name..."
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/dark_greay"
+                    android:background="@drawable/map_edittext_back"
+                    android:textColor="@color/dark_greay"/>
+                <TextView
+                    android:id="@+id/addressTV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/dark_greay"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

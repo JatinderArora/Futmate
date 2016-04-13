@@ -1,0 +1,100 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    contentInsetLeft="72dp"
+    contentInsetStart="72dp"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetLeft="72dp"
+    app:contentInsetStart="72dp">
+
+<LinearLayout
+    android:id="@+id/search_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/search_back"
+            android:gravity="center_vertical"
+            android:hint="Search for Futmates..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColor="@color/username"
+            android:textColorHint="@color/dark_greay"
+            android:textSize="@dimen/drawer_text_size"
+            android:drawableRight="@drawable/search_xhdpi_2"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="0.4"/>
+
+        <ImageView
+            android:id="@+id/img_bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/bell" />
+
+    <RelativeLayout
+        android:id="@+id/active_noti_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/active_noti_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bell" />
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_toRightOf="@+id/active_noti_icon"
+            android:src="@drawable/red_dot"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timer_ring_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:background="@drawable/front_green_ring">
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:text="1s"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "futmate-1216",
+    "project_number": "71565835075",
+    "name": "Futmate"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71565835075:android:6277cf7dd57cdbd3",
+        "client_id": "android:com.footmate",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.footmate",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71565835075-tk5u0h0sbemknkvd70pmbro28aqqfhpo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.footmate",
+            "certificate_hash": "8739BA0B5DA059710C17342E4CAEF0A3DD470D5C"
+          }
+        },
+        {
+          "client_id": "71565835075-ecfr0qv0mmk2156sov5s541kh7hqgrlo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,91 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--Login_Activity xml dimen.... -->
+    <dimen name="fb_gmail_margin">15dp</dimen>
+    <dimen name="parent_bottom_margin">100dp</dimen>
+    <dimen name="bottommaroftoplogo">105dp</dimen>
+
+    <!--Home_Activity With TabLayout_with_Drawer-->
+    <dimen name="pic_img_hei_wid">80dp</dimen>
+    <dimen name="drawer_width">210dp</dimen>
+    <dimen name="drawer_text_size">16dp</dimen>
+
+
+    <!--feed com.footmate.fragment....dimens-->
+    <dimen name="feed_pic_hw">50dp</dimen>
+    <dimen name="margin_left">13dp</dimen>
+    <dimen name="margin_right">6dp</dimen>
+    <dimen name="match_height">35dp</dimen>
+    <dimen name="normal_text">13sp</dimen>
+    <dimen name="match_text">19sp</dimen>
+    <dimen name="layout_margin">5dp</dimen>
+    <dimen name="date_time_size">19sp</dimen>
+    <dimen name="venue_size">18sp</dimen>
+    <dimen name="details_text_size">13sp</dimen>
+    <dimen name="padding_img">8dp</dimen>
+    <dimen name="bottom_mar">5dp</dimen>
+
+    <!--New Plan Activity Dimens.....--><!--StartNew Plan Activity dimens-->
+    <dimen name="toolbar_text">20sp</dimen>
+    <dimen name="title_desc_textsize">13sp</dimen>
+    <dimen name="normal_title_size">12sp</dimen>
+    <dimen name="full_left_right_padding">14dp</dimen>
+    <dimen name="description_height">30dp</dimen>
+
+    <!--StartNew Plan Activity dimens-->
+    <dimen name="all_regular_text">17sp</dimen>
+    <dimen name="three_button_text">15sp</dimen>
+    <dimen name="all_paddings">3dp</dimen>
+    <dimen name="divider_view_height">7dp</dimen>
+
+    <!--Float Click Dialog Dimens-->
+    <dimen name="view_padding">4dp</dimen>
+    <dimen name="bottom_text_size">15sp</dimen>
+    <dimen name="top_margin">20dp</dimen>
+
+    <!--SELELCT A FIELD DIMENS......-->
+    <dimen name="large_heading">17sp</dimen>
+    <dimen name="heading_text_size">14sp</dimen>
+    <dimen name="middle_text_size">14sp</dimen>
+    <dimen name="small_text_size">13sp</dimen>
+    <dimen name="lay_margin">8dp</dimen>
+    <dimen name="layout_padding">4dp</dimen>
+
+
+    <!--map Activity,......-->
+    <dimen name="bottom_margin">30dp</dimen>
+    <dimen name="text_size">19sp</dimen>
+    <dimen name="padding">5dp</dimen>
+
+    <!--comment screen...-->
+    <dimen name="pro_hei_wid">55dp</dimen>
+    <!--invite friend...-->
+    <dimen name="textvie_height">70dp</dimen>
+    <dimen name="in_textsize">19sp</dimen>
+    <dimen name="txt_re">14sp</dimen>
+    <dimen name="circle_top_margin">15dp</dimen>
+    <dimen name="padding_in">2dp</dimen>
+    <dimen name="number_text">19sp</dimen>
+    <dimen name="margin_top">34dp</dimen>
+
+    <!--Activity track-->
+    <dimen name="tracktexts">24sp</dimen>
+    <dimen name="fieldtxt">15sp</dimen>
+    <dimen name="mapfragmenthei">125dp</dimen>
+    <dimen name="gif">90dp</dimen>
+    <dimen name="martop">15dp</dimen>
+
+    <!--After Tracking Activity-->
+    <dimen name="afterlargetxt">23sp</dimen>
+    <dimen name="aftermediumtxt">16sp</dimen>
+    <dimen name="aftersmall">13sp</dimen>
+    <dimen name="aftervrysmall">12sp</dimen>
+
+
+    <!--Profile Activity-->
+    <dimen name="belowtxt">11sp</dimen>
+    <dimen name="upcircleheiwidth">160dp</dimen>
+    <dimen name="belowcircleheiwidth">65dp</dimen>
+    <dimen name="xxlargetxt">29sp</dimen>
+
+</resources>

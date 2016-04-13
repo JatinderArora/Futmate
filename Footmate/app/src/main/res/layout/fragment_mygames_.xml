@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.footmate.fragment.MyGames_Fragment">
+    <!--top row........-->
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/left_right_padd"
+        android:background="@color/app_color">
+        <ImageView
+            android:id="@+id/img_upcoming"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/green_upcoming" />
+        <ImageView
+            android:id="@+id/img_past"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_past" />
+        <ImageView
+            android:id="@+id/img_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/findgames_plus" />
+    </LinearLayout>
+
+    <!--upcomeing listview-->
+    <ListView
+        android:layout_below="@+id/layout1"
+        android:id="@+id/list_ofupcoming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_floataction"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/add_button_2"
+        app:elevation="5dp"
+        app:backgroundTint="@color/plus_color"
+        app:layout_anchorGravity="bottom|right|end" />
+</RelativeLayout>

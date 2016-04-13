@@ -1,0 +1,304 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_color"
+        android:theme="@style/MyMaterialTheme.Base">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_top"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/organizer_cross" />
+
+            <TextView
+                android:id="@+id/text_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="New Plan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_text" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/app_color_back">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--top image-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/plan_img" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_view_height"
+                android:background="@drawable/app_color_back" />
+            <!--Select Date Time-->
+            <RelativeLayout
+                android:id="@+id/layout_datetime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_time_date_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/full_left_right_padding"
+                android:paddingRight="@dimen/full_left_right_padding">
+
+                <ImageView
+                    android:id="@+id/img_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/select_date" />
+
+                <TextView
+                    android:id="@+id/text_datetime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/full_left_right_padding"
+                    android:layout_toRightOf="@+id/img_select"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/all_paddings"
+                    android:singleLine="true"
+                    android:text="Select Date and Time"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/white"
+                    android:textSize="@dimen/all_regular_text" />
+
+                <ImageView
+                    android:id="@+id/img_select_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/select_date_next_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_view_height"
+                android:background="@drawable/app_color_back" />
+            <!--Select a Field-->
+            <RelativeLayout
+                android:id="@+id/layout_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_time_date_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/full_left_right_padding"
+                android:paddingRight="@dimen/full_left_right_padding">
+
+                <ImageView
+                    android:id="@+id/img_select1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/select_venus" />
+
+                <TextView
+                    android:id="@+id/text_field"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/full_left_right_padding"
+                    android:layout_toRightOf="@+id/img_select1"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/all_paddings"
+                    android:singleLine="true"
+                    android:text="Select a Field"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textCursorDrawable="@color/green"
+                    android:textSize="@dimen/all_regular_text" />
+
+                <ImageView
+                    android:id="@+id/img_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/select_date_next_arrow" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_view_height"
+                android:background="@drawable/app_color_back" />
+            <!--Organizer Mode a Field-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_time_date_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/full_left_right_padding"
+                android:paddingRight="@dimen/full_left_right_padding">
+
+                <ImageView
+                    android:id="@+id/img_select5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/organizer_mode" />
+
+                <TextView
+                    android:id="@+id/text_organizer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/full_left_right_padding"
+                    android:layout_toRightOf="@+id/img_select5"
+                    android:padding="@dimen/all_paddings"
+                    android:singleLine="true"
+                    android:text="Organizer Mode"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/all_regular_text" />
+                <!-- <Switch
+                     android:id="@+id/switch_organizer"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:checked="true"
+                     android:layout_centerVertical="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_alignParentRight="true" />-->
+                <com.footmate.views.SwitchButton
+                    android:id="@+id/switch_organizer"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:checked="true"
+                    app:kswBackDrawable="@drawable/miui_back_drawable"
+                    app:kswBackMeasureRatio="2"
+                    app:kswThumbDrawable="@drawable/miui_thumb_drawable" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_view_height"
+                android:background="@drawable/app_color_back" />
+            <!--three button-->
+            <LinearLayout
+                android:id="@+id/layout_threebutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/full_left_right_padding"
+                android:layout_marginRight="@dimen/full_left_right_padding"
+                android:background="@drawable/match"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/text_match"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_freeeplay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_practice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@color/transparent" />
+            <!--Circle Next.....-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/start_match" />
+
+            </LinearLayout>
+            <!--aline parent bottom.....-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

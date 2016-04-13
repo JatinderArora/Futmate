@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--Login_Activity xml dimen.... -->
+    <dimen name="fb_gmail_margin">12dp</dimen>
+    <dimen name="parent_bottom_margin">80dp</dimen>
+
+    <dimen name="bottommaroftoplogo">95dp</dimen>
+
+    <!--Home_Activity With TabLayout_with_Drawer-->
+    <dimen name="pic_img_hei_wid">70dp</dimen>
+    <dimen name="drawer_width">190dp</dimen>
+    <dimen name="drawer_text_size">13dp</dimen>
+
+
+    <!--feed com.footmate.fragment....dimens-->
+    <dimen name="feed_pic_hw">45dp</dimen>
+    <dimen name="margin_left">12dp</dimen>
+    <dimen name="margin_right">5dp</dimen>
+    <dimen name="match_height">30dp</dimen>
+    <dimen name="normal_text">12sp</dimen>
+    <dimen name="match_text">18sp</dimen>
+    <dimen name="layout_margin">5dp</dimen>
+    <dimen name="date_time_size">15sp</dimen>
+    <dimen name="details_text_size">12sp</dimen>
+    <dimen name="padding_img">7dp</dimen>
+    <dimen name="bottom_mar">4dp</dimen>
+
+    <!--New Plan Activity Dimens.....--><!--StartNew Plan Activity dimens-->
+    <dimen name="toolbar_text">19sp</dimen>
+    <dimen name="title_desc_textsize">12sp</dimen>
+    <dimen name="normal_title_size">11sp</dimen>
+    <dimen name="full_left_right_padding">13dp</dimen>
+
+    <!--StartNew Plan Activity dimens-->
+    <dimen name="all_regular_text">16sp</dimen>
+    <dimen name="three_button_text">14sp</dimen>
+    <dimen name="all_paddings">3dp</dimen>
+    <dimen name="divider_view_height">6dp</dimen>
+
+    <!--Float Click Dialog Dimens-->
+    <dimen name="view_padding">4dp</dimen>
+    <dimen name="bottom_text_size">13sp</dimen>
+    <dimen name="top_margin">18dp</dimen>
+
+    <!--Activity track-->
+    <dimen name="tracktexts">21sp</dimen>
+    <dimen name="fieldtxt">15sp</dimen>
+    <dimen name="mapfragmenthei">110dp</dimen>
+    <dimen name="gif">80dp</dimen>
+    <dimen name="martop">11dp</dimen>
+
+    <!--After Tracking Activity-->
+    <dimen name="afterlargetxt">20sp</dimen>
+    <dimen name="aftermediumtxt">13sp</dimen>
+    <dimen name="aftersmall">12sp</dimen>
+    <dimen name="aftervrysmall">11sp</dimen>
+
+    <!--Profile Activity-->
+    <dimen name="belowtxt">10sp</dimen>
+    <dimen name="upcircleheiwidth">150dp</dimen>
+    <dimen name="belowcircleheiwidth">60dp</dimen>
+    <dimen name="xxlargetxt">24sp</dimen>
+</resources>

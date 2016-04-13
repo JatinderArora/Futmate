@@ -1,0 +1,17 @@
+<resources>
+
+    <!--Login_Activity xml dimen.... -->
+    <dimen name="fb_gmail_margin">30dp</dimen>
+    <dimen name="parent_bottom_margin">220dp</dimen>
+
+    <dimen name="bottommaroftoplogo">260dp</dimen>
+
+    <!--Home_Activity With TabLayout_with_Drawer-->
+    <dimen name="pic_img_hei_wid">130dp</dimen>
+    <dimen name="drawer_width">250dp</dimen>
+    <dimen name="drawer_text_size">25dp</dimen>
+
+    <!--Profile Activity-->
+    <dimen name="belowtxt">20sp</dimen>
+
+</resources>

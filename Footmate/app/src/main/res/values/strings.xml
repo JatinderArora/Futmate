@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Futmate</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <!--App Facebook ID.... -->
+    <string name="facebook_app_id">1692625827619724</string>
+    <!--Internet connection Text-->
+    <string name="internetmessage">Internet Connection error.Please connect the valid internet connection.</string>
+    <string name="gpsmessage">GPS Location setting error. Please turn ON your device GPS Location. </string>
+
+    <!--com.footmate.fragment,,-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--font families....-->
+    <string name="ubuntu_m">Ubuntu-M.ttf</string>
+
+    <!--Login Activity-->
+    <string name="title_signup">Sign Up</string>
+    <string name="title_activity_login_">Login_Activity</string>
+    <string name="title_activity_home_">Home_Activity</string>
+
+    <!-- navigation drawer list item title  -->
+    <string-array name="drawer_titles">
+        <item>Feed</item>
+        <item>Profile</item>
+        <item>My Games</item>
+        <item>Invite Friends</item>
+        <item>Notifications</item>
+        <item>Help and support</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- navigation drawer list item icons  -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/drawer_my_feed</item>
+        <item>@drawable/drawer_profile</item>
+        <item>@drawable/drawer_my_games</item>
+        <item>@drawable/drawer_invite_friends</item>
+        <item>@drawable/drawer_notifications</item>
+        <item>@drawable/drawer_help_and_support</item>
+        <item>@drawable/drawer_setting</item>
+    </array>
+    <!--TAb Layout Strings....-->
+    <string name="title_activity_profile_">Profile_Activity</string>
+    <string name="title_activity_new_plan_">NewPlan_Activity</string>
+    <string name="title_activity_start__new__plan">Start_New_PlanActivity</string>
+    <string name="title_activity_first__new_plan">First_NewPlanActivity</string>
+    <string name="title_activity_float__click">Float_ClickActivity</string>
+
+    <!--invite fragments...-->
+    <string name="invite_toop_text">Invite new players to join\nFutmate and grow the game</string>
+    <string name="title_activity_lat_long">LatLongActivity</string>
+
+
+    <!--latlongactivity-->
+
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last location update time</string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+    <string name="location_updated_message">Location updated</string>
+    <string name="title_activity_help_and_support">HelpAndSupportActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Search for futmate screen-->
+    <string name="addfriendtext">Find Futmates to join and see their games</string>
+    <string name="title_activity_find_your_friends">FindYourFriendsActivity</string>
+    
+    <!-- find your friends screen-->
+    <string name="findyourfriends">FIND YOUR FRIENDS</string>
+    <string name="findfacebookfriends">Find Facebook Friends</string>
+    <string name="findgmailfriends">Find Gmail Friends</string>
+    <string name="findcontacts">Find Contacts</string>
+    <string name="suggestplayerstofollow">SUGGEST PLAYERS TO FOLLOW</string>
+
+    <!-- Find Games Fragment screen-->
+    <string name="nearbygames">NEARBY GAMES</string>
+    <string name="sortby">Sort by</string>
+    
+    <!-- Track Games Fragment-->
+    <string name="tracktext">Check-in to track your game,\ndistance ran and speed.</string>
+    <string name="tracktext1">Track your game, distance ran\nand speed.</string>
+    <string name="tracktext2">Allow Futmate location access in your\ndevice settings.</string>
+    <string name="title_activity_track_main">TrackMainActivity</string>
+    <string name="savefield">SAVE FIELD</string>
+    <string name="title_activity_track">TrackActivity</string>
+    <string name="title_activity_after_track">AfterTrackActivity</string>
+    <string name="title_activity_track_game_post">TrackGamePostActivity</string>
+    <string name="title_activity_search_player">SearchPlayerActivity</string>
+    <string name="title_activity_add_guest_list">AddGuestListActivity</string>
+    <string name="title_activity_invite_players">InvitePlayersActivity</string>
+
+    <!-- Invite Players-->
+    <string name="inviteplayers">Invite Players</string>
+    <string name="search">Search</string>
+    <string name="playersyoucaninvite">PLAYERS YOU CAN INVITE</string>
+    <string name="suggestedplayerstoinvite">SUGGESTED PLAYERS TO INVITE</string>
+    <string name="nousersfound">No users found</string>
+    <string name="phonecontacts">Phone contacts</string>
+    
+    <!-- three dot layout-->
+    <string name="invitefutmates">Invite Futmates</string>
+    <string name="inviteviaurl">Invite via URL</string>
+    <string name="gamesettings">Game Settings</string>
+</resources>

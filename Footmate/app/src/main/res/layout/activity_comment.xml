@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_color"
+        android:theme="@style/MyMaterialTheme.Base">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_top"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/organizer_cross" />
+
+            <TextView
+                android:id="@+id/text_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Comments"
+                android:textColor="@color/white"
+                android:textSize="@dimen/toolbar_text" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/layout_field"
+        android:id="@+id/list_comments"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:dividerHeight="10dp" />
+    <!-- layout aline parent bottom................-->
+    <LinearLayout
+        android:id="@+id/layout_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/dark_app_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/left_right_padd"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/search_back"
+            android:layout_weight="2.7">
+
+        <EditText
+            android:id="@+id/edit_writecomment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.4"
+            android:gravity="left"
+            android:hint="Write Comments"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/username"
+            android:textColorHint="@color/dark_greay"
+            android:textSize="@dimen/drawer_text_size" />
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:src="@drawable/comment_cross" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_postcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:padding="10dp"
+            android:src="@drawable/comment" />
+    </LinearLayout>
+
+
+</RelativeLayout>

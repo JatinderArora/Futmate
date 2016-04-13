@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/select_field_toolbar"></include>
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/container_toolbar"
+        android:id="@+id/text_internetconnection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:text="@string/internetmessage"
+        android:visibility="gone"
+        android:background="@color/white"/>
+
+    <ScrollView
+        android:layout_below="@+id/container_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="30dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recent_places"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_text1"
+                    android:text="RECENTLY USE FIELDS"
+                    android:textColor="@color/username"
+                    android:padding="@dimen/layout_padding"
+                    android:background="@color/greay"
+                    android:textSize="@dimen/large_heading"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView_Recent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+                android:dividerHeight="10dp" />
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_nearbyfields"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_text1"
+                    android:text="NEARBY FIELDS"
+                    android:padding="@dimen/layout_padding"
+                    android:background="@color/greay"
+                    android:textSize="@dimen/large_heading"
+                    android:textColor="@color/username" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_NearBy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/white"
+                android:dividerHeight="10dp" />
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addnewfield_greay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_text1"
+                    android:background="@color/greay"
+                    android:padding="@dimen/layout_padding"
+                    android:textSize="@dimen/heading_text_size"
+                    android:textColor="@color/username" />
+                <TextView
+                    android:id="@+id/text_addnewfield_click"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_text1"
+                    android:text="ADD NEW FIELD"
+                    android:padding="@dimen/layout_padding"
+                    android:textSize="@dimen/large_heading"
+                    android:textColor="@color/dark_app_color" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <RelativeLayout
+            android:id="@+id/tool"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:tag="sticky"
+            android:orientation="horizontal">
+            <!--<include-->
+                <!--android:id="@+id/toolbar"-->
+                <!--layout="@layout/map_toolbar"/>-->
+            <!--&lt;!&ndash;new editing.......&ndash;&gt;-->
+            <!--<include-->
+                <!--android:id="@+id/save_toolbar"-->
+                <!--layout="@layout/save_tool"/>-->
+
+        </RelativeLayout>
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+</RelativeLayout>

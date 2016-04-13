@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profilepic"
+            android:layout_width="@dimen/pro_hei_wid"
+            android:layout_height="@dimen/pro_hei_wid"
+            android:src="@drawable/back_circle"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profilepic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_text1"
+                android:padding="@dimen/layout_padding"
+                android:singleLine="true"
+                android:text="RECENTLY USE FIELDS"
+                android:textColor="@color/black_back"
+                android:textSize="@dimen/large_heading" />
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_text1"
+                android:paddingLeft="@dimen/layout_padding"
+                android:text="RECENTLY USE FIELDS"
+                android:textColor="@color/black_back"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

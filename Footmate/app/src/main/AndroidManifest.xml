@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.footmate" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.NETWORK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+
+    <!-- needed for older devices -
+     used to check com.footmate.app background / foreground status -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- START Added for GCM -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission
+        android:name="com.footmate.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.footmate.permission.C2D_MESSAGE" />
+    <!-- END Added for GCM -->
+
+    <!-- Required to show current location -->
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login_Activity"
+            android:label="@string/title_activity_login_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home_Activity"
+            android:label="@string/title_activity_home_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Profile_Activity"
+            android:label="@string/title_activity_profile_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".NewPlan_Activity"
+            android:label="@string/title_activity_new_plan_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Start_New_PlanActivity"
+            android:label="@string/title_activity_start__new__plan"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".Float_ClickActivity"
+            android:label="@string/title_activity_float__click"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".Select_Field_Screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Map_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAETb0b-7-WGBYiug5btw4Tbo6jTidiKLU" />
+
+        <activity
+            android:name=".CreateGameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".FeedDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".FirstTimeAfterLoginScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".HelpAndSupportActivity"
+            android:label="@string/title_activity_help_and_support"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".FindYourFriendsActivity"
+            android:label="@string/title_activity_find_your_friends"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+        <activity
+            android:name=".TrackMainActivity"
+            android:label="@string/title_activity_track_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+        <activity
+            android:name=".TrackTimerActivity"
+            android:label="@string/title_activity_track"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+        <activity
+            android:name=".TrackGameNoOrganiserActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_after_track"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name=".TrackGameOrganiserActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_track_game_post"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+
+        <service
+            android:name="utils.TrackTimerService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".SearchPlayerActivity"
+            android:label="@string/title_activity_search_player"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+        <activity
+            android:name=".AddGuestListActivity"
+            android:label="@string/title_activity_add_guest_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base" >
+        </activity>
+        <activity
+            android:name=".InvitePlayersActivity"
+            android:label="@string/title_activity_invite_players"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme.Base">
+        </activity>
+
+        <!-- START Added for GCM -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.footmate" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".gcm.MyGcmPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".gcm.GcmIntentService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <!-- END Added for GCM -->
+    </application>
+
+</manifest>

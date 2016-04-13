@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/othermsgboxlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_pic"
+            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/image_hei_wid"
+            android:layout_height="@dimen/image_hei_wid"
+            android:src="@drawable/drawer_profile" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="Ronny"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/leftarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/chat_left_arrow"/>
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/leftarrow"
+                    android:padding="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_bg_1">
+                    <TextView
+                        android:id="@+id/user_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:text="Hello dear"
+                        android:textColor="@color/white" />
+                    <com.github.curioustechizen.ago.RelativeTimeTextView
+                        android:id="@+id/user_msg_time_past"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_greay"
+                        android:gravity="right"
+                        android:layout_alignParentBottom="true"
+                        android:text="16h" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mymsgboxlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="right">
+        <ImageView
+            android:id="@+id/rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mymsgbox"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/chat_right_arro"/>
+        <RelativeLayout
+            android:id="@+id/mymsgbox"
+            android:padding="5dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_bg_2">
+            <TextView
+                android:id="@+id/my_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Hello dear"
+                android:textColor="@color/black" />
+            <com.github.curioustechizen.ago.RelativeTimeTextView
+                android:id="@+id/my_msg_time_past"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_greay"
+                android:gravity="left"
+                android:layout_alignParentBottom="true"
+                android:text="16h" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/joinstatuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Fri, 8 apr 2016"
+            android:textColor="@color/txtdarkgrey"/>
+        <TextView
+            android:id="@+id/time_joinstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="3:30:20 AM @Ronny Left"/>
+    </LinearLayout>
+</LinearLayout>

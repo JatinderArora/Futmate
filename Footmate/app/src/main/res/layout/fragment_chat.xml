@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cityname"
+    tools:context="com.footmate.fragment.ChatFragment">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_appcolor_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/left_right_padd"
+            android:paddingRight="@dimen/left_right_padd"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/img_cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="left|center"
+                android:src="@drawable/organizer_cross" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.4" />
+
+            <ImageView
+                android:id="@+id/img_addprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="right"
+                android:padding="5dp"
+                android:src="@drawable/add_user" />
+            <ImageView
+                android:id="@+id/img_threedot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:src="@drawable/organizer_dots" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- layout aline parent bottom................-->
+    <LinearLayout
+        android:id="@+id/layout_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/dark_app_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/left_right_padd"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/msg_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.7"
+            android:background="@drawable/search_back"
+            android:gravity="left"
+            android:hint="Type message here"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/username"
+            android:textColorHint="@color/dark_greay"
+            android:textSize="@dimen/drawer_text_size" />
+
+        <ImageView
+            android:id="@+id/img_sendmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_weight=".3"
+            android:src="@drawable/comment" />
+    </LinearLayout>
+
+
+    <!--Toolbar top Center Text Logo.......-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/text_organizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Chat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/img_left_right_swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:src="@drawable/chatdot_2" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/chatlistview"
+        android:layout_below="@+id/layout"
+        android:layout_above="@+id/layout_field"
+        android:divider="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

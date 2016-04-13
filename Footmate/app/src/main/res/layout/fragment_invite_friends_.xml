@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.footmate.fragment.InviteFriends_Fragment"
+    android:background="@drawable/invitefriends_bg">
+
+    <TextView
+        android:id="@+id/text_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/in_textsize"
+        android:text="@string/invite_toop_text"/>
+    <TextView
+        android:id="@+id/_textimg_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/circle_top_margin"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/invitefriends_circle"
+        android:textSize="@dimen/number_text"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/circle_below_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="RECRUITED PLAYERS"
+        android:layout_marginTop="@dimen/padding_in"
+        android:textSize="@dimen/txt_re" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/text_invitefriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="INVITE FRIENDS"
+        android:background="@drawable/invitefriends_box"
+        android:paddingLeft="@dimen/padding_in"
+        android:paddingRight="@dimen/padding_in"
+        android:textSize="@dimen/txt_re" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#2a3b45</color>
+    <color name="app_color">#2a3b45</color>
+    <color name="dark_app_color">#24333d</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="greay">#eee</color>
+    <color name="dark_greay">#999999</color>
+    <color name="black_back">#F4141418</color>
+    <color name="green">#9BB96F</color>
+    <color name="username">#5e5c5c</color>
+    <color name="level_ce_team">#8ebb6a</color>
+    <color name="bottom_button_back">#72b53e</color>
+    <color name="plus_color">#2d5b81</color>
+    <color name="line_color">#15252f</color>
+    <color name="middle_ui_color">#25343d</color>
+    <color name="searchforfutmatetextcolor">#969696</color>
+    <color name="findfriendsbg">#eeedf4</color>
+    <color name="findyourfriendtextcolor">#555555</color>
+    
+    <color name="sortby">#878787</color>
+    <color name="cityname">#a6a6a5</color>
+    <color name="findgamealltext">#8f8f8f</color>
+    <color name="findgamename">#67747a</color>
+    <color name="findgamelistdivider">#cdcdcd</color>
+
+    <color name="cancelred">#ff1f1f</color>
+    <color name="openyourgamegreen">#81c24d</color>
+    <color name="mygametextcolor">#959595</color>
+
+    <color name="tracktextcolor">#676767</color>
+
+    <!--Feed Screen TExt Color-->
+    <color name="greybg">#dbd9d9</color>
+    <color name="txtdarkgrey">#5f5e5e</color>
+    <color name="txtlightgrey">#b4b3b3</color>
+
+    <!-- Invite players-->
+    <color name="inviteplayers_screen_bg">#efeef4</color>
+
+    <color name="gr">#6f6e6e</color>
+</resources>
